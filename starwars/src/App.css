@@ -2,7 +2,16 @@
   text-align: center;
 }
 .Header {
-  color: #443e3e;
-  text-shadow: 1px 1px 5px #fff;
+  color: black;
+  text-shadow: 1px 1px 5px yellow;
+  font-size: 7rem;
+  letter-spacing: 5px;
+  word-spacing: 20px;
+  margin: 0 auto;
+  margin-top: 1%;
 }
 /* write your parent styles in here for your App.js */
+
+Button {
+  background: blue;
+}

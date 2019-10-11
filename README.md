@@ -26,13 +26,28 @@ Demonstrate your understanding of this Sprint's concepts by answering the follow
 
 - [ ] What is React JS and what problems does it try and solve? Support your answer with concepts introduced in class and from your personal research on the web.
 
+    React is an unopinionated UI library for facilitating the build on the front end of applications. React uses components that focus on their individual pieces of the DOM.
+
+    The DOM manipulation eats a lot of memory and slows performance. Sites with lots of DOM updates can perform slowly when rendered.  React fixes this (sort of like a hack) by using a virtual DOM. THis is a form of technology that creates a virtual representation of the DOM that is then kept in memory and then synced with the actual DOM. This kind of acts like a middleman that mediates a storm of DOM updating.  Facebook is a great example of this. THe updates to the page are continuous and need to perform quickly for a better user experience. Facebook invented this.
+
 - [ ] What does it mean to _think_ in react?
+
+    Thinking in react means preplanning. You need to visualize each component that makes up the application.  Building a mock or rough draft is a good start. You need to identify how the hierarchy is going to flow.  You must break down the components into boxes. Drawing this out by hand is a great start. Then create a static version. This requires lots of typing but less thinking than interactivity.  Then identify a minimum representation of the UI state. Next we need to identify which components are going to own the state. Finally, we need to create the data flow.
 
 - [ ] Describe state.
 
+    State in the data managed in a component.  It’s similar to a moment frozen in time. We can describe what is happening in the frozen moment and create an object array.  Another good way to think about this is with a Ice-Water-Gas example.  If we change the temperature (temperature is a value) we change the state of the matter. (ice is less than or equal to value 32, gas is greater than or equal to value 212, everything in between is water.
+
 - [ ] Describe props.
 
+    Props are how we pass information held on state from one component  to another. Props are read-only. Props don’t change the data. We can send props to child components where we can then access it and make the magic happen.
+
 - [ ] What are side effects, and how do you sync effects in a React component to state or prop changes?
+
+    A side effect is anything that has an effect on items outside of the function scope being executed. Getting data from an API and manipulating the DOM are examples of side effects. There are two categories of side effects. There are side effects that need cleanup and those that do not. 
+
+    In order to sync effects we use an effect hook. This tells React that a component needs to run for executing the side effect. The hook uses 2 parameters. These parameters include a callback and a response. The effect function is inside the component's function scope when it is inside the component. This means it has access to state props and local variables.
+
 
 ## Project Set Up
 
