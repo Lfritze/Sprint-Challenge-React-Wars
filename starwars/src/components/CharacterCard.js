@@ -6,7 +6,7 @@ const PersonCard = styled.div`
     border-radius: 25px;
     display:flex;
     flex-direction: column;
-    width: 20%;
+    width: 25%;
     margin: 2% 0 2% 0;
     background: #b74609;
     opacity: 0.85;
@@ -18,27 +18,30 @@ const PersonCard = styled.div`
 const PersonName = styled.h1`
     border-bottom: 3px solid black;
     display:flex;
-    align-items: left;
+    // align-items: left;
     justify-content: center;
     padding-bottom: 5%;
-    text-shadow: 1px 1px 2px red;
+    text-shadow: 1px 1px 2px yellow;
     font-size: 2rem;
     letter-spacing: 5px;
+    
+`;
+
+const Source = styled.span`
+color: #000034;
+text-shadow: 0.5px 0.5px 0.5px yellow;
 `;
 
 const CardInfo = styled.p`
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     padding:0 0 0 8%;
     letter-spacing: 3.5px;
-    color: lightblue;
-    // display: flex;
-    // text-align: left;
+    color: white;
+    text-shadow:  1px 1px 4px black;
     margin: 0.5%;
 `;    
 
-const Source = styled.span`
-    color: black;
-`;
+
 
 const CharacterCard = (props) => {
     return (
