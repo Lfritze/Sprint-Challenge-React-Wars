@@ -6,14 +6,14 @@ import CharacterCard from './CharacterCard';
 //****************STYLED-COMPONENTS**************************/
 
 const BigContainer= styled.div`
-    border:2px solid black;
+    border:2px solid yellow;
     border-radius: 50px;
     width: 80%;
     margin: 0 auto;
     display:flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    padding:3%;
+    padding: 0.5%;
     background: rgba(76, 89, 111, 0.3);
     margin-bottom: 5%;
 `;

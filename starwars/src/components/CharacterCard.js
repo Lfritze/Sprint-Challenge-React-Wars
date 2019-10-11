@@ -1,6 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
 
+//****************STYLED-COMPONENTS**************************/
+
 const PersonCard = styled.div`
     border: 3px solid black;
     border-radius: 25px;
@@ -21,7 +23,7 @@ const PersonName = styled.h1`
     // align-items: left;
     justify-content: center;
     padding-bottom: 5%;
-    text-shadow: 1px 1px 2px yellow;
+    text-shadow: 1px 1px 2px #C49102;
     font-size: 2rem;
     letter-spacing: 5px;
     
@@ -37,10 +39,9 @@ const CardInfo = styled.p`
     padding:0 0 0 8%;
     letter-spacing: 3.5px;
     color: white;
-    text-shadow:  1px 1px 4px black;
+    text-shadow:  1px 1px 4px blue;
     margin: 0.5%;
 `;    
-
 
 
 const CharacterCard = (props) => {
