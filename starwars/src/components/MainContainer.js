@@ -7,12 +7,12 @@ import CharacterCard from './CharacterCard';
 
 const BigContainer= styled.div`
     border:2px solid black;
+    border-radius: 50px;
     width: 80%;
     margin: 0 auto;
     display:flex;
-    flex-wrap:wrap;
-    // justify-content:center;
-    justify-content: space-around;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
     padding:3%;
     background: rgba(76, 89, 111, 0.3);
     margin-bottom: 5%;

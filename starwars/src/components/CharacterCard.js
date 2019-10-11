@@ -3,14 +3,16 @@ import styled from 'styled-components';
 
 const PersonCard = styled.div`
     border: 3px solid black;
+    border-radius: 25px;
     display:flex;
     flex-direction: column;
     width: 20%;
     margin: 2% 0 2% 0;
     background: #b74609;
-    opacity: 0.8
+    opacity: 0.85;
     color: black;
     text-align:left;
+    
 `;
 
 const PersonName = styled.h1`
@@ -27,25 +29,28 @@ const PersonName = styled.h1`
 const CardInfo = styled.p`
     font-size: 1.5rem;
     padding:0 0 0 8%;
-    letter-spacing: 2px;
-    color: white;
-    display: flex;
-    text-align: left;
+    letter-spacing: 3.5px;
+    color: lightblue;
+    // display: flex;
+    // text-align: left;
     margin: 0.5%;
-
 `;    
+
+const Source = styled.span`
+    color: black;
+`;
 
 const CharacterCard = (props) => {
     return (
         <PersonCard>
             <PersonName>{props.name}</PersonName>
-            <CardInfo>Height:  {props.height} Centimeters</CardInfo>
-            <CardInfo>Weight:  {props.weight} Kilograms</CardInfo>
-            <CardInfo>Sex:  {props.gender}</CardInfo>
-            <CardInfo>Born:  {props.birthYear}</CardInfo>
-            <CardInfo>Eye Color:  {props.eyeColor}</CardInfo>
-            <CardInfo>Skin Pigment:  {props.skinColor}</CardInfo>
-            <CardInfo>Hair Color:  {props.hairColor}</CardInfo>
+            <CardInfo><Source>Height:</Source> {props.height} cm.</CardInfo>
+            <CardInfo><Source>Weight:</Source> {props.weight} Kg.</CardInfo>
+            <CardInfo><Source>Sex:</Source> {props.gender}</CardInfo>
+            <CardInfo><Source>Born:</Source> {props.birthYear}</CardInfo>
+            <CardInfo><Source>Eye Color:</Source> {props.eyeColor}</CardInfo>
+            <CardInfo><Source>Skin Pigment: </Source> {props.skinColor}</CardInfo>
+            <CardInfo><Source>Hair Color: </Source> {props.hairColor}</CardInfo>
         </PersonCard>
     )
 }
