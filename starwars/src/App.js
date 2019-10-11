@@ -17,3 +17,5 @@ const App = () => {
 }
 
 export default App;
+
+// initial commit - installed styled-components, axios, and yarn"
