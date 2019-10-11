@@ -11,3 +11,7 @@
   margin-top: 1%;
 }
 /* write your parent styles in here for your App.js */
+
+Button {
+  background: blue;
+}

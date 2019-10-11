@@ -16,6 +16,7 @@ const App = () => {
       <h1 className="Header">React Wars</h1>
       <MainContainer />
       <ContainedButtons />
+      
     </div>
   );
 }

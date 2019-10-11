@@ -16,7 +16,7 @@ export default function ContainedButtons() {
 
   return (
     <div>
-      <Button variant="contained" href="https://www.starwars.com/databank" className={classes.button}>
+      <Button variant="contained" color= 'primary' href="https://www.starwars.com/databank" className={classes.button}>
         Learn More About the Characters
       </Button>
     </div>
