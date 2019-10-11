@@ -7,6 +7,15 @@ import CharacterCard from './CharacterCard';
 
 const BigContainer= styled.div`
     border:2px solid black;
+    width: 80%;
+    margin: 0 auto;
+    display:flex;
+    flex-wrap:wrap;
+    // justify-content:center;
+    justify-content: space-around;
+    padding:3%;
+    background: rgba(76, 89, 111, 0.3);
+    margin-bottom: 5%;
 `;
 
 const MainContainer = () => {
@@ -30,7 +39,7 @@ const MainContainer = () => {
         <BigContainer>
             {char.map(starChar => {
                 return(
-                    <CharacterCard>
+                    <CharacterCard
                         key={starChar.name}
                         name={starChar.name}
                         height = {starChar.height}
@@ -40,13 +49,11 @@ const MainContainer = () => {
                         eyeColor = {starChar.eye_color}
                         skinColor = {starChar.skin_color}
                         hairColor = {starChar.hair_color}
-                    </CharacterCard>
+                    />
                 )
             })}
         </BigContainer>
-    )
-           
-  
+    )   
 }
 
 export default MainContainer;
