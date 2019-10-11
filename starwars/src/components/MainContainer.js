@@ -30,7 +30,17 @@ const MainContainer = () => {
         <BigContainer>
             {char.map(starChar => {
                 return(
-                    <CharacterCard></CharacterCard>
+                    <CharacterCard>
+                        key={starChar.name}
+                        name={starChar.name}
+                        height = {starChar.height}
+                        weight = {starChar.mass}
+                        birthYear = {starChar.birth_year}
+                        gender = {starChar.gender}
+                        eyeColor = {starChar.eye_color}
+                        skinColor = {starChar.skin_color}
+                        hairColor = {starChar.hair_color}
+                    </CharacterCard>
                 )
             })}
         </BigContainer>
