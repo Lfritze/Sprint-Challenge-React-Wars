@@ -1,6 +1,13 @@
 import React, {useState, useEffect} from 'react';
 import axios from 'axios';
+import styled from 'styled-components';
+import CharacterCard from './CharacterCard';
 
+//****************STYLED-COMPONENTS**************************/
+
+const BigContainer= styled.div`
+    border:2px solid black;
+`;
 
 const MainContainer = () => {
 
@@ -20,10 +27,16 @@ const MainContainer = () => {
     },[])
 
     return (
-        <div></div>
+        <BigContainer>
+            {char.map(starChar => {
+                return(
+                    <CharacterCard></CharacterCard>
+                )
+            })}
+        </BigContainer>
     )
            
-  console.log(char);
+  
 }
 
 export default MainContainer;
